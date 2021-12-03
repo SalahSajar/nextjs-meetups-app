@@ -1,0 +1,7 @@
+.meetupDetails--CONTAINER img {
+  width: 100%;
+}
+
+.meetupDetails--CONTAINER > * {
+  margin: 0.5rem 0;
+}
