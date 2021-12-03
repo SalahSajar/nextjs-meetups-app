@@ -42,7 +42,8 @@ export const getStaticProps = async () => {
                     description:item.description
                 }
             }).reverse()
-        }
+        },
+        revalidate:1
     }
 }
 
