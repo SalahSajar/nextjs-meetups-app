@@ -32,6 +32,7 @@ export const getStaticProps = async () => {
     client.close();
 
     return {
+        revalidate:1,
         props:{
             meetups: result.map(item => {
                 return {
@@ -43,7 +44,6 @@ export const getStaticProps = async () => {
                 }
             }).reverse()
         },
-        revalidate:1
     }
 }
 
